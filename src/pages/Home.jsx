@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import HeroBanner from "../components/HeroBanner";
 import SearchExercises from "../components/SearchExercises";
 import Exercises from "../components/Exercises";
+import Location from "../components/Location";
 
 const Home = () => {
   const [bodyPart, setBodyPart] = useState("all");
@@ -22,6 +23,7 @@ const Home = () => {
         exercises={exercises}
         bodyPart={bodyPart}
       />
+      <Location />
     </Box>
   );
 };

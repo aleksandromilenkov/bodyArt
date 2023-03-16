@@ -53,8 +53,28 @@ body {
 }
 .logoSizeSmall {
   margin: 0px 20px;
-  width: fit-content;
+
   height: 48px;
+}
+.location {
+  width: 100%;
+  height: 100%;
+}
+.locationContainer {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem auto;
+}
+@media screen and (max-width: 600px) {
+  .locationContainer {
+    width: 450px;
+    height: 380px;
+  }
 }
 @media screen and (max-width: 485px) {
   .links {
@@ -62,8 +82,11 @@ body {
   }
 
   .logoSizeSmall {
-    height: fit-content;
-    width: 120px;
+    height: 30px;
+  }
+  .locationContainer {
+    width: 350px;
+    height: 280px;
   }
 }
 
